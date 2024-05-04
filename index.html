@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-min.css">
     <link rel="stylesheet" href="index.css">
     <title>The Sneaker Guy</title>
 </head>
 <body>
-    <div class="container bg-dark">
+    <div class="container bg-dark" id="Home">
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <img class="logo" src="logo.png" alt="Logo">
@@ -17,83 +17,92 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME</a>
+                <li class="nav-item">
+                        <a class="nav-link" href="#Home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">YOUTUBE</a>
+                        <a class="nav-link" href="#Youtube">YOUTUBE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BLOGS</a>
+                        <a class="nav-link" href="#Blogs">BLOGS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="#About">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="#Contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
         </nav>
-
+        
+        <img src="Collection.jpg" class="img-fluid" alt="Video 4 Thumbnail">
         <!-- Landing Page -->
         <header class="jumbotron text-center">
             <div class="container">
-                <h2 class="display-4">Welcome to <strong>THE SNEAKER GUY</strong> WORLD</h2>
-                <!-- <a class="btn btn-primary btn-lg" href="#learn-more" role="button">Learn More</a> -->
+                <h2 class="display-4">ARE YOU A <strong>
+                        <div id=flip>
+                            <div><div class="bg-flip">SWARAJ</div></div>
+                            <div><div class="bg-flip">RONIT</div></div>
+                            <div><div class="bg-flip">INDRAJEET</div></div>
+                        </div>
+                    </strong>
+                </h2>
+                <!-- <a class="btn btn-primary btn-lg" href="./blog.html" role="button">Learn More</a> -->
             </div>
         </header>
-
+        
         <!-- YouTube Videos Section -->
-        <div class="container mt-5">
+        <div class="container mt-5" id="Youtube">
             <h2 class="fw-bolder">YOUTUBE</h2>
             <div class="row">
+                <!-- Example YouTube Video 2 -->
+                <div class="col-md-4 thumbnails">
+                    <a href="https://www.youtube.com/watch?v=qcjnS0vRZpI&t=623s" target="_blank">
+                        <img src="Collection.jpg" class="img-fluid" alt="Video 4 Thumbnail">
+                    </a>
+                    <p class="lead text-light">My ₹2,00,000 SNEAKER COLLECTION | THE SNEAKER GUY</p>
+                </div>
+
                 <!-- Example YouTube Video 1 -->
                 <div class="col-md-4 thumbnails">
-                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank">
-                        <img src="THUMBNAIL_URL_1" class="img-fluid" alt="Video 1 Thumbnail">
+                    <a href="https://www.youtube.com/watch?v=zp7xbUOdcL8&t=18s" target="_blank">
+                        <img src="Best Sneaker.jpg" class="img-fluid" alt="Video 1 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">Finding BEST SNEAKER From EVERY SNEAKER STORE In Pune😍😱🔥</p>
                 </div>
 
                 <!-- Example YouTube Video 2 -->
                 <div class="col-md-4 thumbnails">
-                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">
-                        <img src="THUMBNAIL_URL_2" class="img-fluid" alt="Video 2 Thumbnail">
+                    <a href="https://www.youtube.com/watch?v=rlwC8zXjI0k" target="_blank">
+                        <img src="Converse gift.jpg" class="img-fluid" alt="Video 2 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">CONVERSE INDIA Sent Me A SPECIAL PAIR 🔥🔥</p>
                 </div>
                 
                 <!-- Example YouTube Video 2 -->
                 <div class="col-md-4 thumbnails">
-                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">
-                        <img src="THUMBNAIL_URL_2" class="img-fluid" alt="Video 3 Thumbnail">
+                    <a href="https://www.youtube.com/watch?v=s1GxwTPxJJI&t=154s" target="_blank">
+                        <img src="30 Day Challenge.jpg" class="img-fluid" alt="Video 3 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">I Destroyed CONVERSE CHUCK 70 after wearing them For 30 DAYS😭😭😭</p>
                 </div>
+                
+                
+                <!-- Example YouTube Video 2 -->
+                <!-- <div class="col-md-4 thumbnails">
+                    <a href="https://www.youtube.com/watch?v=g2Rkv5O8gJo&t=16s" target="_blank">
+                        <img src="AF1 V Court Vision.jpg" class="img-fluid" alt="Video 5 Thumbnail">
+                    </a>
+                    <p class="lead text-light">Nike COURT VISION vs Nike AIR FORCE 1</p>
+                </div> -->
                 
                 <!-- Example YouTube Video 2 -->
                 <div class="col-md-4 thumbnails">
-                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">
-                        <img src="THUMBNAIL_URL_2" class="img-fluid" alt="Video 4 Thumbnail">
+                    <a href="https://www.youtube.com/watch?v=MOOHpOZGPXQ&t=11s" target="_blank">
+                        <img src="Friends & Family.jpg" class="img-fluid" alt="Video 6 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
-                </div>
-                
-                <!-- Example YouTube Video 2 -->
-                <div class="col-md-4 thumbnails">
-                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">
-                        <img src="THUMBNAIL_URL_2" class="img-fluid" alt="Video 5 Thumbnail">
-                    </a>
-                    <p class="lead">TITLE</p>
-                </div>
-                
-                <!-- Example YouTube Video 2 -->
-                <div class="col-md-4 thumbnails">
-                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">
-                        <img src="THUMBNAIL_URL_2" class="img-fluid" alt="Video 6 Thumbnail">
-                    </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">ULTIMATE RARE SNEAKER UNBOXING 😱🤯</p>
                 </div>
 
                 <!-- Add more video thumbnails as needed -->
@@ -101,74 +110,74 @@
         </div>
 
         <!-- Blog Section -->
-        <div class="container mt-5">
+        <div class="container mt-5" id="Blogs">
             <h2 class="fw-bolder">BLOG</h2>
             <div class="row">
                 <!-- Example Blog Post 1 -->
                 <div class="col-md-4">
-                    <a href="blog-post-1.html">
-                        <img src="blog-thumbnail-1.jpg" class="img-fluid" alt="Blog Post 1 Thumbnail">
+                    <a href="./blog.html">
+                        <img src="AF1 V Court Vision.jpg" class="img-fluid" alt="Blog Post 1 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">Nike COURT VISION vs Nike AIR FORCE 1</p>
                 </div>
 
                 <!-- Example Blog Post 2 -->
                 <div class="col-md-4">
-                    <a href="blog-post-2.html">
-                        <img src="blog-thumbnail-2.jpg" class="img-fluid" alt="Blog Post 2 Thumbnail">
+                    <a href="./blog.html">
+                        <img src="New Balance Scam.jpg" class="img-fluid" alt="Blog Post 2 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">Is Flipkart Selling fake New Balance?</p>
                 </div>
                 
                 <!-- Example Blog Post 2 -->
                 <div class="col-md-4">
-                    <a href="blog-post-2.html">
-                        <img src="blog-thumbnail-2.jpg" class="img-fluid" alt="Blog Post 3 Thumbnail">
+                    <a href="./blog.html">
+                        <img src="Puma-Destoryed.jpg" class="img-fluid" alt="Blog Post 3 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">How Puma destoryed Addidas and Nike to Become Best Sneaker Brand in INDIA</p>
                 </div>
                 
                 <!-- Example Blog Post 1 -->
                 <div class="col-md-4">
-                    <a href="blog-post-1.html">
-                        <img src="blog-thumbnail-1.jpg" class="img-fluid" alt="Blog Post 4 Thumbnail">
+                    <a href="./blog.html">
+                        <img src="2024Trendiest.jpg" class="img-fluid" alt="Blog Post 4 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">3 trendiest Sneaker Brand for 2024!</p>
                 </div>
 
                 <!-- Example Blog Post 2 -->
                 <div class="col-md-4">
-                    <a href="blog-post-2.html">
-                        <img src="blog-thumbnail-2.jpg" class="img-fluid" alt="Blog Post 5 Thumbnail">
+                    <a href="./blog.html">
+                        <img src="YeezyDead.jpg" class="img-fluid" alt="Blog Post 5 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">Addidas yeezy Slide DEAD?</p>
                 </div>
                 
                 <!-- Example Blog Post 2 -->
                 <div class="col-md-4">
-                    <a href="blog-post-2.html">
-                        <img src="blog-thumbnail-2.jpg" class="img-fluid" alt="Blog Post 6 Thumbnail">
+                    <a href="./blog.html">
+                        <img src="StopBuying.jpg" class="img-fluid" alt="Blog Post 6 Thumbnail">
                     </a>
-                    <p class="lead">TITLE</p>
+                    <p class="lead text-light">Don't Buy Sneakers Before Reading THIS</p>
                 </div>
 
                 <!-- Add more blog post thumbnails as needed -->
             </div>
         </div>
-
+        
         <!-- About Us Section -->
-        <div class="container mt-5">
+        <div class="container mt-5" id="About">
             <h2 class="fw-bolder">ABOUT US</h2>
             <div class="jumbotron">
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus ipsum nec enim facilisis, a vestibulum felis ultricies.</p>
+                <img src="Friends & Family.jpg" class="img-fluid" alt="Video 6 Thumbnail">
                 <hr class="my-4">
-                <p>Our team is dedicated to providing quality content and services. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>I'm Ronit Kamble, known as <b>"The Sneaker Guy"</b>, with a thriving YouTube community of 50,000+ passionate subscribers. My channel is your go-to for all things sneakers, catering to every budget and hype seeker. From unboxing and reviews to outfit inspiration, I cover it all. Explore iconic brands, dissect fashion trends, and gain valuable styling tips to elevate your sneaker game. What sets my channel apart is our interactive and supportive community; we engage through comments and social media. Whether you're a seasoned sneakerhead or new to the culture, join us for the latest trends and style insights. I'm here as "The Sneaker Guy" to boost your sneaker game with confidence.</p>
             </div>
         </div>
 
 
         <!-- Contact Us Form -->
-        <div class="container mt-5">
+        <div class="container mt-5" id="Contact">
             <h2 class="fw-bolder">CONTACT US</h2>
             <form>
                 <div class="form-group">
@@ -200,9 +209,9 @@
     </div>
     
     <!-- Bootstrap JS and jQuery (required for Bootstrap components) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1-slim-min.js"></script>
+    <script src="popper-min.js"></script>
+    <script src="bootstrap.min.js"></script>
 
 </body>
 </html>
