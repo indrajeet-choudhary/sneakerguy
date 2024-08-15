@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <title>The Sneaker Guy</title>
 </head>
+
 <body>
     <div class="container bg-dark" id="Home">
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <img class="logo" src="logo.png" alt="Logo">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#Home">HOME</a>
                     </li>
                     <li class="nav-item">
@@ -35,29 +39,35 @@
                 </ul>
             </div>
         </nav>
-        
+
         <img src="Collection.jpg" class="img-fluid" alt="Video 4 Thumbnail">
         <!-- Landing Page -->
         <header class="jumbotron text-center">
             <div class="container">
                 <h2 class="display-4">ARE YOU A <strong>
                         <div id=flip>
-                            <div><div class="bg-flip">SWARAJ</div></div>
-                            <div><div class="bg-flip">RONIT</div></div>
-                            <div><div class="bg-flip">INDRAJEET</div></div>
+                            <div>
+                                <div class="bg-flip">SWARAJ</div>
+                            </div>
+                            <div>
+                                <div class="bg-flip">RONIT</div>
+                            </div>
+                            <div>
+                                <div class="bg-flip">INDRAJEET</div>
+                            </div>
                         </div>
                     </strong>
                 </h2>
                 <!-- <a class="btn btn-primary btn-lg" href="./blog.html" role="button">Learn More</a> -->
             </div>
         </header>
-        
+
         <!-- YouTube Videos Section -->
         <div class="container mt-5" id="Youtube">
             <h2 class="fw-bolder">YOUTUBE</h2>
-            <div class="row">
+            <div class="row carousel">
                 <!-- Example YouTube Video 2 -->
-                <div class="col-md-4 thumbnails">
+                <div class="col-md-4 thumbnails carousel-item active">
                     <a href="https://www.youtube.com/watch?v=qcjnS0vRZpI&t=623s" target="_blank">
                         <img src="Collection.jpg" class="img-fluid" alt="Video 4 Thumbnail">
                     </a>
@@ -65,7 +75,7 @@
                 </div>
 
                 <!-- Example YouTube Video 1 -->
-                <div class="col-md-4 thumbnails">
+                <div class="col-md-4 thumbnails carousel-item">
                     <a href="https://www.youtube.com/watch?v=zp7xbUOdcL8&t=18s" target="_blank">
                         <img src="Best Sneaker.jpg" class="img-fluid" alt="Video 1 Thumbnail">
                     </a>
@@ -73,22 +83,22 @@
                 </div>
 
                 <!-- Example YouTube Video 2 -->
-                <div class="col-md-4 thumbnails">
+                <div class="col-md-4 thumbnails carousel-item">
                     <a href="https://www.youtube.com/watch?v=rlwC8zXjI0k" target="_blank">
                         <img src="Converse gift.jpg" class="img-fluid" alt="Video 2 Thumbnail">
                     </a>
                     <p class="lead text-light">CONVERSE INDIA Sent Me A SPECIAL PAIR 🔥🔥</p>
                 </div>
-                
+
                 <!-- Example YouTube Video 2 -->
-                <div class="col-md-4 thumbnails">
+                <div class="col-md-4 thumbnails carousel-item">
                     <a href="https://www.youtube.com/watch?v=s1GxwTPxJJI&t=154s" target="_blank">
                         <img src="30 Day Challenge.jpg" class="img-fluid" alt="Video 3 Thumbnail">
                     </a>
                     <p class="lead text-light">I Destroyed CONVERSE CHUCK 70 after wearing them For 30 DAYS😭😭😭</p>
                 </div>
-                
-                
+
+
                 <!-- Example YouTube Video 2 -->
                 <!-- <div class="col-md-4 thumbnails">
                     <a href="https://www.youtube.com/watch?v=g2Rkv5O8gJo&t=16s" target="_blank">
@@ -96,14 +106,16 @@
                     </a>
                     <p class="lead text-light">Nike COURT VISION vs Nike AIR FORCE 1</p>
                 </div> -->
-                
+
                 <!-- Example YouTube Video 2 -->
-                <div class="col-md-4 thumbnails">
+                <div class="col-md-4 thumbnails carousel-item">
                     <a href="https://www.youtube.com/watch?v=MOOHpOZGPXQ&t=11s" target="_blank">
                         <img src="Friends & Family.jpg" class="img-fluid" alt="Video 6 Thumbnail">
                     </a>
                     <p class="lead text-light">ULTIMATE RARE SNEAKER UNBOXING 😱🤯</p>
                 </div>
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
 
                 <!-- Add more video thumbnails as needed -->
             </div>
@@ -128,15 +140,16 @@
                     </a>
                     <p class="lead text-light">Is Flipkart Selling fake New Balance?</p>
                 </div>
-                
+
                 <!-- Example Blog Post 2 -->
                 <div class="col-md-4">
                     <a href="./blog.html">
                         <img src="Puma-Destoryed.jpg" class="img-fluid" alt="Blog Post 3 Thumbnail">
                     </a>
-                    <p class="lead text-light">How Puma destoryed Addidas and Nike to Become Best Sneaker Brand in INDIA</p>
+                    <p class="lead text-light">How Puma destoryed Addidas and Nike to Become Best Sneaker Brand in INDIA
+                    </p>
                 </div>
-                
+
                 <!-- Example Blog Post 1 -->
                 <div class="col-md-4">
                     <a href="./blog.html">
@@ -152,7 +165,7 @@
                     </a>
                     <p class="lead text-light">Addidas yeezy Slide DEAD?</p>
                 </div>
-                
+
                 <!-- Example Blog Post 2 -->
                 <div class="col-md-4">
                     <a href="./blog.html">
@@ -164,14 +177,21 @@
                 <!-- Add more blog post thumbnails as needed -->
             </div>
         </div>
-        
+
         <!-- About Us Section -->
         <div class="container mt-5" id="About">
             <h2 class="fw-bolder">ABOUT US</h2>
             <div class="jumbotron">
                 <img src="Friends & Family.jpg" class="img-fluid" alt="Video 6 Thumbnail">
                 <hr class="my-4">
-                <p>I'm Ronit Kamble, known as <b>"The Sneaker Guy"</b>, with a thriving YouTube community of 50,000+ passionate subscribers. My channel is your go-to for all things sneakers, catering to every budget and hype seeker. From unboxing and reviews to outfit inspiration, I cover it all. Explore iconic brands, dissect fashion trends, and gain valuable styling tips to elevate your sneaker game. What sets my channel apart is our interactive and supportive community; we engage through comments and social media. Whether you're a seasoned sneakerhead or new to the culture, join us for the latest trends and style insights. I'm here as "The Sneaker Guy" to boost your sneaker game with confidence.</p>
+                <p>I'm Ronit Kamble, known as <b>"The Sneaker Guy"</b>, with a thriving YouTube community of 50,000+
+                    passionate subscribers. My channel is your go-to for all things sneakers, catering to every budget
+                    and hype seeker. From unboxing and reviews to outfit inspiration, I cover it all. Explore iconic
+                    brands, dissect fashion trends, and gain valuable styling tips to elevate your sneaker game. What
+                    sets my channel apart is our interactive and supportive community; we engage through comments and
+                    social media. Whether you're a seasoned sneakerhead or new to the culture, join us for the latest
+                    trends and style insights. I'm here as "The Sneaker Guy" to boost your sneaker game with confidence.
+                </p>
             </div>
         </div>
 
@@ -194,7 +214,8 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"
+                        required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -207,11 +228,47 @@
             </div>
         </footer>
     </div>
-    
-    <!-- Bootstrap JS and jQuery (required for Bootstrap components) -->
-    <script src="jquery-3.5.1-slim-min.js"></script>
-    <script src="popper-min.js"></script>
-    <script src="bootstrap.min.js"></script>
 
+    <!-- Bootstrap JS and jQuery (required for Bootstrap components) -->
+    <!-- <script src="jquery-3.5.1-slim-min.js"></script>
+    <script src="popper-min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- <script src="bootstrap.min.js"></script> -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            const carouselItems = document.querySelectorAll(".carousel-item");
+            let currentItem = 0;
+
+            function showItem(index) {
+                carouselItems.forEach(item => item.classList.remove("active", "left", "right"));
+                carouselItems[index].classList.add("active");
+                if (index > 0) {
+                    carouselItems[index - 1].classList.add("left");
+                }
+                if (index < carouselItems.length - 1) {
+                    carouselItems[index + 1].classList.add("right");
+                }
+            }
+
+            document.querySelector(".prev").addEventListener("click", function () {
+                currentItem = (currentItem - 1 + carouselItems.length) % carouselItems.length;
+                showItem(currentItem);
+            });
+
+            document.querySelector(".next").addEventListener("click", function () {
+                currentItem = (currentItem + 1) % carouselItems.length;
+                showItem(currentItem);
+            });
+
+            // Show initial item
+            showItem(currentItem);
+        });
+    </script>
 </body>
+
 </html>

@@ -76,3 +76,55 @@ min-height: 10px;
     background-color: #fff;
     z-index: 10;
 }
+
+
+
+.carousel {
+    position: relative;
+    width: 300px;
+    /* Adjust width as needed */
+    height: 200px;
+    /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s;
+    pointer-events: none;
+}
+
+.carousel-item.active {
+    z-index: 2;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+}
+
+.carousel-item.left {
+    transform: translateX(-150%) rotateY(30deg);
+}
+
+.carousel-item.right {
+    transform: translateX(50%) rotateY(-30deg);
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

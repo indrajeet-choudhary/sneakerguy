@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style type="text/css">
+        .carousel {
+            position: relative;
+            width: 300px;
+            /* Adjust width as needed */
+            height: 200px;
+            /* Adjust height as needed */
+            overflow: hidden;
+        }
+
+        .carousel-item {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: transform 0.5s;
+            pointer-events: none;
+        }
+
+        .carousel-item.active {
+            z-index: 2;
+        }
+
+        .carousel-item img {
+            display: block;
+            width: 100%;
+        }
+
+        .carousel-item.left {
+            transform: translateX(-150%) rotateY(30deg);
+        }
+
+        .carousel-item.right {
+            transform: translateX(50%) rotateY(-30deg);
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="Best Sneaker.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="Collection.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="Converse gift.jpg" alt="Image 3">
+        </div>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            const carouselItems = document.querySelectorAll(".carousel-item");
+            let currentItem = 0;
+
+            function showItem(index) {
+                carouselItems.forEach(item => item.classList.remove("active", "left", "right"));
+                carouselItems[index].classList.add("active");
+                if (index > 0) {
+                    carouselItems[index - 1].classList.add("left");
+                }
+                if (index < carouselItems.length - 1) {
+                    carouselItems[index + 1].classList.add("right");
+                }
+            }
+
+            document.querySelector(".prev").addEventListener("click", function () {
+                currentItem = (currentItem - 1 + carouselItems.length) % carouselItems.length;
+                showItem(currentItem);
+            });
+
+            document.querySelector(".next").addEventListener("click", function () {
+                currentItem = (currentItem + 1) % carouselItems.length;
+                showItem(currentItem);
+            });
+
+            // Show initial item
+            showItem(currentItem);
+        });
+
+    </script>
+</body>
+
+</html>
